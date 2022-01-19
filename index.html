@@ -1,10 +1,159 @@
-<html>
-	<head>
-		<title>
-			Hello World
-		</title>
-	</head>
-	<body>
-		Write your code for the submission by editing this file
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #36013F;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2.1% 6.5%;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #400201;
+  color: #FFFFFF;
+  }
+/* Create three equal columns that floats next to each other */
+.column1 {
+  border-style: dotted;
+  background-color: #400201;
+  float: left;
+  width: 100%;
+  height: 355px;
+  padding: 15px 10px;
+}
+.column1 h1{
+  font-size: 45px;
+  color: #FFFFFF;
+}
+.column1 h3{
+  padding: 105px 0px;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.column2 {
+  border-style: dotted;
+  background-color: #FFFFFF;
+  float: left;
+  width: 100%;
+  height: 355px;
+  padding: 15px 10px;
+}
+.column2 p{
+  border-style: double;
+  height: 33%;
+}
+.column3 {
+  border-style: dotted;
+  background-color: #400201;
+  float: left;
+  width: 100%;
+  height: 355px;
+  padding: 1px 0px;
+}
+.column3 p{
+  font-size: 14px;
+  color: #FFFFFF;
+  border-style: double;
+  }
+ .column3 h6{
+  padding: 0px;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-style: double;
+  }
+.column4 {
+  border-style: dotted;
+  background-color: #400201;
+  float: left;
+  width: 100%;
+  height: 355px;
+  padding: 15px 10px;
+}
+.column5 {
+  border-style: dotted;
+  background-color: #400201;
+  float: left;
+  width: 100%;
+  height: 355px;
+  padding: 15px 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Tips</a>
+  <a href="#">Faqs</a>
+  <a href="#">Symptoms</a>
+  <a href="#">Youtube</a>
+</div>
+<div class="row">
+  <div class="column1">
+    <h1>Want to know more about covid-19?</h1>
+    <h3>Then this is the right place</h3>
+  </div>
+  
+  <div class="column2">
+    <h2>Tips</h2>
+    <p>Hand wash</p>
+    <p>Wear mask</p>
+  </div>
+  
+  <div class="column3">
+    <h2>Faqs</h2>
+    <p>What is COVID-19?</br>
+    COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+    <p>Should I use soap and water or hand sanitizer to protect myself?</br>
+    Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
+  </div>
+  
+  <div class="column4">
+    <h2>Symptoms</h2>
+    <p>hi</p>
+  </div>
+  <div class="column5">
+    <h2>Youtube</h2>
+    <p>hi</p>
+  </div>
+</div>
+</body>
 </html>
+
+
