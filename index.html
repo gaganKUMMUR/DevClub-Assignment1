@@ -43,12 +43,12 @@ body {
   padding: 15px 10px;
 }
 .column1 h1{
-  font-size: 45px;
+  font-size: 35px;
   color: #FFFFFF;
 }
 .column1 h3{
-  padding: 105px 0px;
-  font-size: 40px;
+  padding: 10px 0px;
+  font-size: 25px;
   color: #FFFFFF;
 }
 .column2 {
@@ -68,7 +68,7 @@ body {
   background-color: #400201;
   float: left;
   width: 100%;
-  height: 355px;
+  height: 400px;
   padding: 1px 10px;
 }
 .column3 h2{
@@ -77,13 +77,13 @@ body {
 
 .column3 div{
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   color: #FFFFFF;
   border-style: double;
   padding: 0px 1px;
   }
 .column3 p2{
- font-size: 25px;
+ font-size: 18px;
  }
 
 .column4 {
@@ -94,7 +94,18 @@ body {
   height: 355px;
   padding: 15px 10px;
 }
-
+.table {
+    font-family: Arial;
+    text-align: center; 
+    border-collapse: collapse;
+    width: 100%;
+}
+.table tr,th{
+    border: 1px solid #dddddd;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 .column5 {
   border-style: dotted;
   background-color: #400201;
@@ -103,7 +114,11 @@ body {
   height: 355px;
   padding: 15px 10px;
 }
-
+.row {
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -123,25 +138,25 @@ body {
 
 
 <div class="topnav">
-  <a href="#">Home</a>
-  <a href="#">Tips</a>
-  <a href="#">Faqs</a>
-  <a href="#">Symptoms</a>
-  <a href="#">Youtube</a>
+  <a href="#column1">Home</a>
+  <a href="#column2">Tips</a>
+  <a href="#column3">Faqs</a>
+  <a href="#column4">Symptoms</a>
+  <a href="#column5">Youtube</a>
 </div>
 <div class="row">
-  <div class="column1">
+  <div class="column1" id="column1">
     <h1>Want to know more about covid-19?</h1>
     <h3>Then this is the right place</h3>
   </div>
   
-  <div class="column2">
+  <div class="column2" id="column2">
     <h2>Tips</h2>
     <p>Hand wash</p>
     <p>Wear mask</p>
   </div>
   
-  <div class="column3">
+  <div class="column3" id="column3">
     <h2>Faqs</h2>
     <div class="que1">
     <p2>What is COVID-19?</p2>
@@ -151,14 +166,43 @@ body {
     <p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
   </div>
   </div>
-  <div class="column4">
+  <div class="column4" id="column4">
     <h2>Symptoms</h2>
-    <p>hi</p>
+    <table>
+        <tr>
+            <th>Symptoms</th>
+            <th>Severity</th>
+            <th>Advice</th>
+        </tr>
+        <tr>
+            <th>Fever</th>
+            <th>Mild</th>
+            <th>Drink plenty of water</th>
+        </tr>
+        <tr>
+            <th>Cold</th>
+            <th>Mild</th>
+            <th>Drink plenty of water</th>
+        </tr>
+        <tr>
+            <th>Cough</th>
+            <th>Mild</th>
+            <th>Drink plenty of water</th>
+        </tr>
+        <tr>
+            <th>Tiredness</th>
+            <th>Mild</th>
+            <th>Drink plenty of water</th>
+        </tr>
+    </table>
   </div>
-  <div class="column5">
+  <div class="column5" id="column5">
     <h2>Youtube</h2>
-    <p>hi</p>
+ <iframe width=100% height="255" src="https://www.youtube.com/embed/qHksVwOrpbE?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" frameborder="0" allowfullscreen></iframe>">
   </div>
+</div>
+<div class="footer">
+    <p>made by Gagankumar c kummur</p>
 </div>
 </body>
 </html>
